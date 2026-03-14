@@ -5,28 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Title</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="layout-wrapper">
-      <header class="site-header">
-        <div class="container">
-          <h1>Header</h1>
+      <header>
+        <div class="site-header">
+          <nav class="navbar">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/images/Logo.png" alt="Logo" />
+              </a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Toggle menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+
+            <div class="nav-content">
+              <ul class="nav-links">
+                <li>
+                  <a href="#" id="active">Home</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#">Reviews</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">White Level</a>
+                </li>
+              </ul>
+
+              <div class="nav-buttons">
+                <button class="btn btn-outline-secondary">Log In</button>
+                <button class="btn btn-outline-primary">Book a Demo</button>
+              </div>
+            </div>
+          </nav>
         </div>
       </header>
 
       <main class="main-content">
         <div class="container">
-          <section class="content-section">
+          <!-- <section class="content-section">
             <h2>Main Content</h2>
             <p>Your content goes here.</p>
-          </section>
+          </section> -->
         </div>
       </main>
 
       <footer class="site-footer">
-        <div class="container">
+        <!-- <div class="container">
           <p>Footer</p>
-        </div>
+        </div> -->
       </footer>
     </div>
 
