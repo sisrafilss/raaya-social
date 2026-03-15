@@ -16,6 +16,7 @@ body {
 }
 
 section {
+  background-color: #f5f5f5;
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -693,4 +694,39 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+/* video for business section */
+.business-section-heading h2,
+.persoanl-section-heading h2 {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.business-section-heading img,
+.persoanl-section-heading img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.business-video-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.video-card {
+  max-width: 300px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.thumbnail-wrapper {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #344054;
 }
