@@ -1,5 +1,8 @@
-/* Responsive Styles */
+/* Responsive Styles - Organized by Breakpoints */
+
+/* Large Desktop / Tablet Landscape (1024px) */
 @media (max-width: 1024px) {
+  /* Navbar */
   .navbar {
     position: relative;
   }
@@ -70,17 +73,26 @@
     width: 56px;
     height: 56px;
   }
-}
 
-@media (max-width: 991px) {
+  /* Hero Section */
+  .heading {
+    font-size: 40px;
+  }
+
+  /* Services */
+  .service-header p {
+    padding: 0 16px;
+  }
+
+  /* Main Content */
   .main-wrapper {
     flex-direction: column;
-    align-items: flex-start; /* Or center if you prefer */
+    align-items: flex-start;
     gap: 30px;
   }
 
   .vertical-divider {
-    display: none; /* Vertical line doesn't work well when stacked */
+    display: none;
   }
 
   .fixed-content {
@@ -89,15 +101,49 @@
 
   .slider-window {
     width: 100vw;
-    margin-left: -20px; /* Aligns slider with edges of screen */
+    margin-left: -20px;
   }
 
   .logo-set img {
-    height: 28px; /* Slightly smaller logos on mobile */
+    height: 28px;
   }
 }
 
+/* Tablet Portrait / Large Mobile (768px) */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .heading {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  /* Hero Layout */
+  #hero > .container {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Cards */
+  .card-grid {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .main-card {
+    padding: 25px;
+  }
+}
+
+/* Mobile (640px) */
 @media (max-width: 640px) {
+  /* Header */
   header {
     padding: 12px 0;
   }
@@ -112,29 +158,15 @@
   }
 }
 
-/* Hero Section */
-@media (max-width: 1024px) {
-  .heading {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 32px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-}
-
+/* Small Mobile (480px) */
 @media (max-width: 480px) {
+  /* Hero Section */
   .heading {
     font-size: 26px;
   }
 }
 
+/* Desktop / Large Screens (min-width: 768px) */
 @media (min-width: 768px) {
   #hero > .container {
     margin: 0 auto;
