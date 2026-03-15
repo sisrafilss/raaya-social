@@ -700,13 +700,13 @@ header {
 
 /* video for business section */
 .business-section-heading h2,
-.persoanl-section-heading h2 {
+.personal-section-heading h2 {
   display: inline-block;
   margin-bottom: 40px;
 }
 
 .business-section-heading img,
-.persoanl-section-heading img {
+.personal-section-heading img {
   margin-left: 10px;
   margin-right: 10px;
 }

@@ -121,12 +121,12 @@
   }
 
   .business-section-heading,
-  .persoanl-section-heading {
+  .personal-section-heading {
     text-align: center;
   }
 
   .business-section-heading h2,
-  .persoanl-section-heading h2 {
+  .personal-section-heading h2 {
     font-size: 1.75rem;
   }
 
@@ -226,18 +226,18 @@
   }
 
   .business-section-heading h2,
-  .persoanl-section-heading h2 {
+  .personal-section-heading h2 {
     font-size: 1.5rem;
     margin-bottom: 24px;
   }
 
   .business-section-heading,
-  .persoanl-section-heading {
+  .personal-section-heading {
     text-align: center;
   }
 
   .business-section-heading img,
-  .persoanl-section-heading img {
+  .personal-section-heading img {
     width: 40px;
     height: auto;
   }
@@ -359,18 +359,18 @@
   }
 
   .business-section-heading h2,
-  .persoanl-section-heading h2 {
+  .personal-section-heading h2 {
     font-size: 1.25rem;
     margin-bottom: 20px;
   }
 
   .business-section-heading,
-  .persoanl-section-heading {
+  .personal-section-heading {
     text-align: center;
   }
 
   .business-section-heading img,
-  .persoanl-section-heading img {
+  .personal-section-heading img {
     width: 32px;
     height: auto;
     margin: 0 8px;
@@ -607,7 +607,7 @@
   }
 
   .business-section-heading,
-  .persoanl-section-heading {
+  .personal-section-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -615,13 +615,13 @@
   }
 
   .business-section-heading h2,
-  .persoanl-section-heading h2 {
+  .personal-section-heading h2 {
     font-size: 1.25rem;
     margin-bottom: 0;
   }
 
   .business-section-heading img,
-  .persoanl-section-heading img {
+  .personal-section-heading img {
     width: 28px;
     height: auto;
     margin: 0;
