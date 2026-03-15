@@ -730,3 +730,34 @@ header {
   font-weight: 500;
   color: #344054;
 }
+
+/* short video section */
+.short-video-section-wrapper {
+  background-color: #fff;
+}
+
+.short-video-section-container {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.short-poster {
+  max-width: 480px;
+  border-radius: 16px;
+}
+
+.short-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.short-content h2 {
+  margin-bottom: 20px;
+}
+
+.short-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
