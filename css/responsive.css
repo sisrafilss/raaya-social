@@ -72,6 +72,31 @@
   }
 }
 
+@media (max-width: 991px) {
+  .main-wrapper {
+    flex-direction: column;
+    align-items: flex-start; /* Or center if you prefer */
+    gap: 30px;
+  }
+
+  .vertical-divider {
+    display: none; /* Vertical line doesn't work well when stacked */
+  }
+
+  .fixed-content {
+    padding-right: 0;
+  }
+
+  .slider-window {
+    width: 100vw;
+    margin-left: -20px; /* Aligns slider with edges of screen */
+  }
+
+  .logo-set img {
+    height: 28px; /* Slightly smaller logos on mobile */
+  }
+}
+
 @media (max-width: 640px) {
   header {
     padding: 12px 0;
