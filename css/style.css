@@ -1168,3 +1168,122 @@ header {
   color: #949494;
   margin: 0;
 }
+
+/* Footer */
+.footer-container {
+  padding: 48px 0px;
+  background-color: #ffffff;
+  color: #344054;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 2;
+  min-width: 300px;
+}
+.footer-links {
+  flex: 1;
+  min-width: 150px;
+}
+.footer-contact {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.footer-logo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.footer-description {
+  margin-bottom: 25px;
+  max-width: 400px;
+  color: #344054;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #344054;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #8b5cf6;
+}
+
+/* Buttons */
+.footer-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  color: #98a2b3;
+}
+
+.form-textarea {
+  height: 100px;
+  resize: none;
+  color: #98a2b3;
+}
+
+.btn-submit {
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
