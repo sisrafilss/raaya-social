@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Global Style */
 * {
   margin: 0;
@@ -42,6 +43,7 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .container {
@@ -198,7 +200,7 @@ header {
   background-color: #f5f5f5;
 }
 
-#hero > .container {
+#hero>.container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -215,8 +217,6 @@ header {
   color: #344054;
 }
 
-.heading-container {
-}
 
 .heading {
   font-size: 48px;
@@ -333,14 +333,13 @@ header {
 
 .fa-instagram {
   /* Instagram Gradient Effect */
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -348,12 +347,15 @@ header {
 .fa-facebook {
   color: #1877f2;
 }
+
 .fa-x-twitter {
   color: #000000;
 }
+
 .fa-youtube {
   color: #ff0000;
 }
+
 .fa-linkedin {
   color: #0077b5;
 }
@@ -387,6 +389,7 @@ header {
   margin: 0;
   color: #000;
 }
+
 .client-label {
   font-size: 1rem;
   color: #1d2939;
@@ -432,6 +435,7 @@ header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -583,8 +587,6 @@ header {
 }
 
 .radio-circle.active {
-  background: var(--primary-purple);
-  border-color: var(--primary-purple);
   color: #fff;
   font-size: 0.7rem;
 }
@@ -702,6 +704,7 @@ header {
   display: inline-block;
   margin-bottom: 40px;
 }
+
 .business-section-heading img,
 .persoanl-section-heading img {
   margin-left: 10px;
@@ -859,6 +862,7 @@ header {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.85rem;
 }
+
 .video-container:hover .video-thumb {
   transform: scale(1.05);
   transition: transform 0.4s ease;
@@ -1187,10 +1191,12 @@ header {
   flex: 2;
   min-width: 300px;
 }
+
 .footer-links {
   flex: 1;
   min-width: 150px;
 }
+
 .footer-contact {
   flex: 1.5;
   min-width: 300px;

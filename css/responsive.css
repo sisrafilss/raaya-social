@@ -1,7 +1,6 @@
-/* Responsive Styles - Organized by Breakpoints */
-
 /* Large Desktop / Tablet Landscape (1024px) */
 @media (max-width: 1024px) {
+
   /* Navbar */
   .navbar {
     position: relative;
@@ -30,6 +29,7 @@
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
     z-index: 1000;
+    overflow-y: auto;
   }
 
   .nav-content.active {
@@ -100,7 +100,7 @@
   }
 
   .slider-window {
-    width: 100vw;
+    width: calc(100% + 40px);
     margin-left: -20px;
   }
 
@@ -158,6 +158,7 @@
 
 /* Tablet Portrait / Large Mobile (768px) */
 @media (max-width: 768px) {
+
   /* Hero Section */
   .heading {
     font-size: 32px;
@@ -168,10 +169,19 @@
   }
 
   /* Hero Layout */
-  #hero > .container {
+  #hero>.container {
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .hero-btn-container {
+    flex-wrap: wrap;
+  }
+
+  .thumbnail-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* Cards */
@@ -287,6 +297,7 @@
 
 /* Mobile (640px) */
 @media (max-width: 640px) {
+
   /* Header */
   header {
     padding: 12px 0;
@@ -455,8 +466,9 @@
 
 /* Desktop / Large Screens (min-width: 768px) */
 @media (min-width: 768px) {
+
   /* Hero Layout */
-  #hero > .container {
+  #hero>.container {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
@@ -489,6 +501,7 @@
 
 /* Tablet Clip Section (769px - 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
+
   /* Clip Section */
   .clip-card-container {
     display: grid;
@@ -516,9 +529,36 @@
 
 /* Small Mobile (480px) */
 @media (max-width: 480px) {
+
   /* Hero Section */
   .heading {
     font-size: 26px;
+  }
+
+  .hero-btn-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .hero-btn-container .btn {
+    width: 100%;
+  }
+
+  .thumbnail-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-card {
+    width: 100%;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .social-icons-list {
+    justify-content: center;
+    gap: 1rem;
   }
 
   /* Clip Section */
@@ -609,6 +649,10 @@
 
   .short-content h2 {
     font-size: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
   }
 
   .short-content .description {
